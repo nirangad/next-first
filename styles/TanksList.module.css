@@ -1,0 +1,15 @@
+.tanks_list{
+  list-style: none;
+
+}
+
+.tanks_list li{
+  border: 1px solid #a4a5aa;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 2px;
+}
+
+.tanks_list li:hover {
+  background-color: #c3f5e4;
+}
