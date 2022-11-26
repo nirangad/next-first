@@ -1,0 +1,26 @@
+.nav_bar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav_logo {
+}
+
+.nav_item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav_item a {
+  font-weight: bold;
+  border-radius: 10px;
+  padding: 8px 15px;
+}
+
+.nav_item a:hover {
+  background-color: #dffdff;
+}
+
+.logo {
+}
