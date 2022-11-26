@@ -5,6 +5,10 @@
   flex-direction: column;
 }
 
+.children {
+  margin: 20px 20px 0 20px;
+}
+
 .footer {
   margin-top: auto;
 }

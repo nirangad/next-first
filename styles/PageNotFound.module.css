@@ -1,0 +1,13 @@
+.img {
+  width: 100%;
+}
+
+.img span {
+  display: block;
+}
+
+.img span img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

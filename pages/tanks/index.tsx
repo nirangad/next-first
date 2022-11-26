@@ -3,7 +3,7 @@ import styles from "../../styles/TanksList.module.css";
 const TankList = () => {
   return (
   <>
-    <h2>Welcome to Tanks List</h2>
+    <h1>Welcome to Tanks List</h1>
     <ul className={styles.tanks_list}>
       <li>Tank #001</li>
       <li>Tank #002</li>
