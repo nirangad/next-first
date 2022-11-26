@@ -1,0 +1,10 @@
+.layout {
+  margin: 20px 30px 0 30px;
+  height: 98vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+}

@@ -1,13 +1,5 @@
 .home {
-  min-height: 98vh;
   margin: 20px 20px 0 20px;
   display: flex;
   flex-direction: column;
-}
-
-.home:not(.item) {
-}
-
-.home .item {
-  margin-top: auto;
 }
