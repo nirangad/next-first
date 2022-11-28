@@ -1,20 +1,29 @@
+import Link from "next/link";
 import styles from "../../styles/TanksList.module.css";
 
-const TankList = () => {
+export const getStaticProps = async () => {
+  const res = await fetch("https://jsonplaceholder.typicode.com/users");
+  const data = await res.json();
+
+  return { props: { tanks: data } };
+};
+
+const TankList = ({tanks}: {tanks: any}) => {
   return (
-  <>
-    <h1>Welcome to Tanks List</h1>
-    <ul className={styles.tanks_list}>
-      <li>Tank #001</li>
-      <li>Tank #002</li>
-      <li>Tank #003</li>
-      <li>Tank #004</li>
-      <li>Tank #005</li>
-      <li>Tank #006</li>
-      <li>Tank #007</li>
-      <li>Tank #008</li>
-    </ul>
-  </>);
-}
+    <>
+      <h1>Welcome to Tanks List</h1>
+      <ul className={styles.tanks_list}>
+        {tanks.map((t: any) => {
+          return (
+            <div key={t.id}>
+              <span><Link href={`/tanks/${t.id}`}>{t.name}</Link></span>
+              <span>{t.email}</span>
+            </div>
+          )
+        })}
+      </ul>
+    </>
+  );
+};
 
 export default TankList;
