@@ -1,15 +1,25 @@
-.tanks_list{
-  list-style: none;
-
-}
-
-.tanks_list li{
-  border: 1px solid #a4a5aa;
-  border-radius: 4px;
+.tanks_list {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  border: 1px solid #413f3f;
   padding: 10px;
-  margin: 10px 2px;
+  border-radius: 5px;
 }
 
-.tanks_list li:hover {
-  background-color: #c3f5e4;
+.tanks_list:hover {
+  background-color: #c9e9e9;
+}
+
+.name {
+  font-size: 18px;
+}
+
+.email {
+  font-size: 12px;
+}
+
+.email a {
+  color: #4e4eaf;
+  text-decoration: underline;
 }

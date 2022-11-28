@@ -8,20 +8,24 @@ export const getStaticProps = async () => {
   return { props: { tanks: data } };
 };
 
-const TankList = ({tanks}: {tanks: any}) => {
+const TankList = ({ tanks }: { tanks: any }) => {
   return (
     <>
       <h1>Welcome to Tanks List</h1>
-      <ul className={styles.tanks_list}>
+      <div>
         {tanks.map((t: any) => {
           return (
-            <div key={t.id}>
-              <span><Link href={`/tanks/${t.id}`}>{t.name}</Link></span>
-              <span>{t.email}</span>
+            <div className={styles.tanks_list} key={t.id}>
+              <span className={styles.name}>
+                <Link href={`/tanks/${t.id}`}>{t.name}</Link>
+              </span>
+              <span className={styles.email}>
+                {t.email} | <Link href={t.website}>{t.website}</Link>
+              </span>
             </div>
-          )
+          );
         })}
-      </ul>
+      </div>
     </>
   );
 };
