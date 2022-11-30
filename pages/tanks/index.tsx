@@ -11,7 +11,7 @@ export const getStaticProps = async () => {
 const TankList = ({ tanks }: { tanks: any }) => {
   return (
     <>
-      <h1>Welcome to Tanks List</h1>
+      <h1>Welcome to Tanks List - NextJs</h1>
       <div>
         {tanks.map((t: any) => {
           return (
